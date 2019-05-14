@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.Stack;
 
 public class tree {
     private static class TreeNode {
@@ -32,7 +33,7 @@ public class tree {
     }
 
     /**
-     * 二叉树前序遍历
+     * 二叉树前序遍历 递归
      * 
      * @param node
      */
@@ -46,7 +47,28 @@ public class tree {
     }
 
     /**
-     * 二叉树中序遍历
+     * 二叉树前序遍历 非递归
+     * 
+     * @param root
+     */
+    public static void preOrderWithStack(TreeNode root) {
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+        TreeNode treeNode = root;
+        while (treeNode != null || !stack.isEmpty()) {
+            while (treeNode != null) {
+                System.out.println(treeNode.data);
+                stack.push(treeNode);
+                treeNode = treeNode.leftChild;
+            }
+            if (!stack.isEmpty()) {
+                treeNode = stack.pop();
+                treeNode = treeNode.rightChild;
+            }
+        }
+    }
+
+    /**
+     * 二叉树中序遍历 递归
      * 
      * @param node
      */
@@ -60,7 +82,28 @@ public class tree {
     }
 
     /**
-     * 二叉树后序遍历
+     * 二叉树中序遍历 非递归
+     * 
+     * @param root
+     */
+    public static void inOrderWithStack(TreeNode root) {
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+        TreeNode treeNode = root;
+        while (treeNode != null || !stack.isEmpty()) {
+            while (treeNode != null) {
+                stack.push(treeNode);
+                treeNode = treeNode.leftChild;
+            }
+            if (!stack.isEmpty()) {
+                treeNode = stack.pop();
+                System.out.println(treeNode.data);
+                treeNode = treeNode.rightChild;
+            }
+        }
+    }
+
+    /**
+     * 二叉树后序遍历 递归
      * 
      * @param node
      */
@@ -73,14 +116,49 @@ public class tree {
         System.out.println(node.data);
     }
 
+    /**
+     * 二叉树后序遍历 非递归
+     * 
+     * @param root
+     */
+    public static void postOrderWithStack(TreeNode root) {
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+        Stack<Integer> stack2 = new Stack<Integer>();
+        TreeNode treeNode = root;
+        Integer i = new Integer(1);
+        while (treeNode != null || !stack.isEmpty()) {
+            while (treeNode != null) {
+                stack.push(treeNode);
+                stack2.push(new Integer(0));
+                treeNode = treeNode.leftChild;
+            }
+            while (!stack.isEmpty() && stack2.peek().equals(i)) {
+                stack2.pop();
+                System.out.println(stack.pop().data);
+            }
+            if (!stack.isEmpty()) {
+                stack2.pop();
+                stack2.push(new Integer(1));
+                treeNode = stack.peek();
+                treeNode = treeNode.rightChild;
+            }
+        }
+    }
+
     public static void main(String[] args) {
         Integer[] inputList = new Integer[] { 8, 4, 10, 3, 5, 9, 11 };
         TreeNode treeNode = createBinaryTree(inputList, 0);
         System.out.println("前序遍历：");
         preOrderTraveral(treeNode);
+        System.out.println("==================");
+        preOrderWithStack(treeNode);
         System.out.println("中序遍历：");
         inOrderTraveral(treeNode);
+        System.out.println("==================");
+        inOrderWithStack(treeNode);
         System.out.println("后序遍历：");
         postOrderTraveral(treeNode);
+        System.out.println("==================");
+        postOrderWithStack(treeNode);
     }
 }
