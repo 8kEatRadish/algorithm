@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Stack;
+import java.util.Queue;
 
 public class tree {
     private static class TreeNode {
@@ -145,6 +146,27 @@ public class tree {
         }
     }
 
+    /**
+     * 二叉树层序遍历
+     * 
+     * @param root
+     */
+
+    public static void levelOrderTraversal(TreeNode root) {
+        Queue<TreeNode> queue = new LinkedList<TreeNode>();
+        queue.offer(root);
+        while (!queue.isEmpty()) {
+            TreeNode node = queue.poll();
+            System.out.println(node.data);
+            if (node.leftChild != null) {
+                queue.offer(node.leftChild);
+            }
+            if (node.rightChild != null) {
+                queue.offer(node.rightChild);
+            }
+        }
+    }
+
     public static void main(String[] args) {
         Integer[] inputList = new Integer[] { 8, 4, 10, 3, 5, 9, 11 };
         TreeNode treeNode = createBinaryTree(inputList, 0);
@@ -160,5 +182,7 @@ public class tree {
         postOrderTraveral(treeNode);
         System.out.println("==================");
         postOrderWithStack(treeNode);
+        System.out.println("层序遍历：");
+        levelOrderTraversal(treeNode);
     }
 }
