@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class BothSidesQuickSort {
+class singleEndedQuickSort {
 
     /**
      * 快排
@@ -19,7 +19,7 @@ class BothSidesQuickSort {
     }
 
     /**
-     * 分治(双边循环法)
+     * 分治(单边循环法)
      * 
      * @param array
      * @param startIndex
@@ -29,25 +29,19 @@ class BothSidesQuickSort {
 
     private static int partition(int[] array, int startIndex, int endIndex) {
         int pivot = array[startIndex];
-        int left = startIndex;
-        int right = endIndex;
-        while (left != right) {
-            while (left < right && array[right] > pivot) {
-                right--;
-            }
-            while (left < right && array[left] <= pivot) {
-                left++;
-            }
-            if (left < right) {
-                int p = array[left];
-                array[left] = array[right];
-                array[right] = p;
+        int mark = startIndex;
+        for(int i = startIndex + 1; i <= endIndex; i++){
+            if(array[i] < pivot){
+                mark ++;
+                int p = array[mark];
+                array[mark] = array[i];
+                array[i] = p;
             }
         }
 
-        array[startIndex] = array[left];
-        array[left] = pivot;
-        return left;
+        array[startIndex] = array[mark];
+        array[mark] = pivot;
+        return mark;
     }
 
     public static void main(String[] args) {
