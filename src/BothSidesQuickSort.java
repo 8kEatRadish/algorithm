@@ -1,6 +1,9 @@
 import java.util.Arrays;
 
-class BothSidesQuickSort {
+/**
+ * @author sniperking
+ */
+public class BothSidesQuickSort {
 
     /**
      * 快排

@@ -1,6 +1,9 @@
 import java.util.Arrays;
 
-class PriorityQueue {
+/**
+ * @author sniperking
+ */
+public class PriorityQueue {
     private int[] array;
     private int size;
 

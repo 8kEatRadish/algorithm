@@ -1,6 +1,9 @@
 import java.util.Arrays;
 
-class HeapSort {
+/**
+ * @author sniperking
+ */
+public class HeapSort {
 
     /**
      * 下沉调整

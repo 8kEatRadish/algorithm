@@ -3,7 +3,10 @@ import java.util.LinkedList;
 import java.util.Stack;
 import java.util.Queue;
 
-public class tree {
+/**
+ * @author sniperking
+ */
+public class Tree {
     private static class TreeNode {
         int data;
         TreeNode leftChild;

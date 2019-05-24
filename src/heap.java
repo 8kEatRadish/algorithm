@@ -1,6 +1,9 @@
 import java.util.Arrays;
 
-class heap {
+/**
+ * @author sniperking
+ */
+public class heap {
 
     /**
      * 上浮调整

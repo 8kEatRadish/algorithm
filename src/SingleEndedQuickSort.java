@@ -1,6 +1,9 @@
 import java.util.Arrays;
 
-class singleEndedQuickSort {
+/**
+ * @author sniperking
+ */
+public class SingleEndedQuickSort {
 
     /**
      * 快排

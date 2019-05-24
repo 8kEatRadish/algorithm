@@ -3,7 +3,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-class stackQuickSort {
+/**
+ * @author sniperking
+ */
+public class StackQuickSort {
 
     /**
      * 快排（非递归）
