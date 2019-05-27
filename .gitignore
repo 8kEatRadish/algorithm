@@ -19,6 +19,9 @@
 # Java class files
 *.class
 
+.classpath
+.project
+
 # Generated files
 bin/
 gen/
@@ -68,3 +71,4 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 fastlane/readme.md
+.settings/org.eclipse.buildship.core.prefs
