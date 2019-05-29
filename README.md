@@ -19,3 +19,5 @@
 
 [实现一个栈，该栈有出栈、进栈、取最小元素3个方法。要保证三个方法的时间复杂度都是O(1)](https://gitee.com/suihw/algorithm/blob/master/src/MinStack.java)
 
+[求两个整数的最大公约数，要优化算法性能](https://gitee.com/suihw/algorithm/blob/master/src/GetGreatestCommonDivisor.java)
+
