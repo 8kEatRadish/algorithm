@@ -23,3 +23,5 @@
 
 [判断一个数是否为2的整数次幂](https://gitee.com/suihw/algorithm/blob/master/src/IsPowerOf2.java)
 
+[无序数组的最大相邻差](https://gitee.com/suihw/algorithm/blob/master/src/GetMaxSortedDistance.java)
+
