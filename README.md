@@ -21,3 +21,5 @@
 
 [求两个整数的最大公约数，要优化算法性能](https://gitee.com/suihw/algorithm/blob/master/src/GetGreatestCommonDivisor.java)
 
+[判断一个数是否为2的整数次幂](https://gitee.com/suihw/algorithm/blob/master/src/IsPowerOf2.java)
+
