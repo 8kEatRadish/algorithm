@@ -15,3 +15,5 @@
 | 计数排序   | O(n + m)       | O(n +m)        | O(m)       | 稳定         |
 | 桶排序     | O(n)           | O(nlogn)       | O(n)       | 稳定         |
 
+[判断链表是否闭环，环长，入环口](https://gitee.com/suihw/algorithm/blob/master/src/ListIsCycle.java)
+
