@@ -25,3 +25,5 @@
 
 [无序数组的最大相邻差](https://gitee.com/suihw/algorithm/blob/master/src/GetMaxSortedDistance.java)
 
+[用栈实现队列](https://gitee.com/suihw/algorithm/blob/master/src/StackQueue.java)
+
