@@ -27,3 +27,5 @@
 
 [用栈实现队列](https://gitee.com/suihw/algorithm/blob/master/src/StackQueue.java)
 
+[寻找一个正整数全排列的下一个数](https://gitee.com/suihw/algorithm/blob/master/src/FindNextNumber.java)
+
