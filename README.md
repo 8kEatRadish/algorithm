@@ -34,3 +34,5 @@
 [实现大整数相加](https://gitee.com/suihw/algorithm/blob/master/src/BigNumberSum.java)
 
 [动态规划求解金矿问题](https://gitee.com/suihw/algorithm/blob/master/src/GetBestGoldMining.java)
+
+[寻找出现次数为奇数的两个数](https://gitee.com/suihw/algorithm/blob/master/src/FindLostNum.java)
