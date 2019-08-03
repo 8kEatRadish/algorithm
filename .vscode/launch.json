@@ -1,0 +1,188 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Java",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "AstarSerch.java",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ]
+        },
+        {
+            "name": "Java Console App",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ],
+            "externalConsole": true
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AstarSearch<algorithm>",
+            "request": "launch",
+            "mainClass": "AstarSearch",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BigNumberSum<algorithm>",
+            "request": "launch",
+            "mainClass": "BigNumberSum",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BothSidesQuickSort<algorithm>",
+            "request": "launch",
+            "mainClass": "BothSidesQuickSort",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BucketSort<algorithm>",
+            "request": "launch",
+            "mainClass": "BucketSort",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CountSort<algorithm>",
+            "request": "launch",
+            "mainClass": "CountSort",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FindLostNum<algorithm>",
+            "request": "launch",
+            "mainClass": "FindLostNum",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FindNextNumber<algorithm>",
+            "request": "launch",
+            "mainClass": "FindNextNumber",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GetBestGoldMining<algorithm>",
+            "request": "launch",
+            "mainClass": "GetBestGoldMining",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GetGreatestCommonDivisor<algorithm>",
+            "request": "launch",
+            "mainClass": "GetGreatestCommonDivisor",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GetMaxSortedDistance<algorithm>",
+            "request": "launch",
+            "mainClass": "GetMaxSortedDistance",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HeapSort<algorithm>",
+            "request": "launch",
+            "mainClass": "HeapSort",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-IsPowerOf2<algorithm>",
+            "request": "launch",
+            "mainClass": "IsPowerOf2",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ListIsCycle<algorithm>",
+            "request": "launch",
+            "mainClass": "ListIsCycle",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MinStack<algorithm>",
+            "request": "launch",
+            "mainClass": "MinStack",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PriorityQueue<algorithm>",
+            "request": "launch",
+            "mainClass": "PriorityQueue",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RemoveKNumber<algorithm>",
+            "request": "launch",
+            "mainClass": "RemoveKNumber",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SingleEndedQuickSort<algorithm>",
+            "request": "launch",
+            "mainClass": "SingleEndedQuickSort",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StackQueue<algorithm>",
+            "request": "launch",
+            "mainClass": "StackQueue",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StackQuickSort<algorithm>",
+            "request": "launch",
+            "mainClass": "StackQuickSort",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Tree<algorithm>",
+            "request": "launch",
+            "mainClass": "Tree",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-heap<algorithm>",
+            "request": "launch",
+            "mainClass": "heap",
+            "projectName": "algorithm"
+        }
+    ]
+}
