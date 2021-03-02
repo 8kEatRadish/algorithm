@@ -13,7 +13,7 @@ package FuckingBinaryTree;
  * 链接：https://leetcode-cn.com/problems/binary-tree-maximum-path-sum
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  **/
-public class LeekCode124 {
+public class LeetCode124 {
 
     public static void main(String[] args) {
         TreeNode node1 = new TreeNode(-10);
@@ -27,9 +27,9 @@ public class LeekCode124 {
         node3.left = node4;
         node3.right = node5;
 
-        LeekCode124 leekCode124 = new LeekCode124();
+        LeetCode124 leetCode124 = new LeetCode124();
 
-        System.out.println("最大路径和是：" + leekCode124.maxPathSum(node1));
+        System.out.println("最大路径和是：" + leetCode124.maxPathSum(node1));
 
     }
 
@@ -55,23 +55,4 @@ public class LeekCode124 {
         return Integer.max(left,right) + root.val;
     }
 
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode() {
-    }
-
-    TreeNode(int val) {
-        this.val = val;
-    }
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
 }
