@@ -1,4 +1,4 @@
-package FuckingBinaryTree;
+package FuckingOneQuestionPerDay;
 
 
 import java.util.Stack;
@@ -29,7 +29,6 @@ class MyQueue {
      * Initialize your data structure here.
      */
     public MyQueue() {
-
     }
 
     /**

@@ -1,4 +1,4 @@
-package FuckingBinaryTree;
+package FuckingOneQuestionPerDay;
 
 import java.util.Arrays;
 
