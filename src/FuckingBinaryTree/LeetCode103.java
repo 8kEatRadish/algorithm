@@ -40,7 +40,7 @@ public class LeetCode103 {
 
             }
             ans.add(level);
-//            isOrderLeft = !isOrderLeft;
+            isOrderLeft = !isOrderLeft;
         }
         return ans;
     }
