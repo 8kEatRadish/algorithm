@@ -36,7 +36,6 @@ public class LeetCode95 {
             }
 
         }
-
         return allTree;
     }
 }
