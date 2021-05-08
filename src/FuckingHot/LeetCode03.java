@@ -15,19 +15,36 @@ import java.util.Map;
  */
 public class LeetCode03 {
 
-    public int findRepeatNumber(int[] nums) {
-        int ans = 0;
-        Map<Integer,Integer> map = new HashMap();
+//    public int findRepeatNumber(int[] nums) {
+//        int ans = 0;
+//        Map<Integer,Integer> map = new HashMap();
+//
+//        for(int i = 0; i < nums.length; i++){
+//            if(map.containsKey(nums[i])){
+//                ans = nums[i];
+//                break;
+//            }else{
+//                map.put(nums[i], 1);
+//            }
+//        }
+//
+//        return ans;
+//    }
 
-        for(int i = 0; i < nums.length; i++){
-            if(map.containsKey(nums[i])){
-                ans = nums[i];
-                break;
-            }else{
-                map.put(nums[i], 1);
+
+    //因为在一个长度为 n 的数组 nums 里的所有数字都在 0～n-1 的范围内；所以nums[k]不会越界，如果有重复的数字，那么nums[k]会小于0
+    public int findRepeatNumber(int[] nums) {
+        int n = nums.length;
+
+        for(int i = 0; i < n; i ++){
+            int k = nums[i];
+            if(k < 0){
+                k += n;
             }
+            if(nums[k] < 0) return k;
+            nums[k] -= n;
         }
 
-        return ans;
+        return -1;
     }
 }
